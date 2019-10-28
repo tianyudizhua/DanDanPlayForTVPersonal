@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ghost.thunder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <service
+            android:name="com.xunlei.downloadlib.TaskService"
+            android:process=":task" />
+        <meta-data
+            android:name="com.xunlei.download.APP_KEY"
+            android:value="WpRMNjAyNDsxNTA0MzI4ODA4LjgyNDcwOQ&amp;&amp;wskQ==aa245b0f666d17adf15fe1afc93d2d3730726f^4==3E^EE79A7FE5FF4B4D2F53A645F24E56" />
+    </application>
+
+</manifest>

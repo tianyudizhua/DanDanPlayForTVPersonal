@@ -25,5 +25,4 @@ android {
 
 dependencies {
     implementation deps.support.appcompat
-//    implementation 'com.android.support:support-annotations:25.4.0'
 }

@@ -1,21 +1,7 @@
 apply plugin: 'com.android.library'
+apply from:rootProject.file('libbase.gradle')
 
 android {
-    compileSdkVersion buildVersions.targetSdk
-    buildToolsVersion buildVersions.buildTools
-    defaultConfig {
-        minSdkVersion buildVersions.minSdk
-        targetSdkVersion buildVersions.targetSdk
-    }
-    compileOptions {
-        sourceCompatibility buildVersions.sourceCompat
-        targetCompatibility buildVersions.targetCompat
-    }
-    lintOptions {
-        abortOnError false
-    }
-    productFlavors {
-    }
     sourceSets {
         main {
             jniLibs.srcDirs = ['src/main/jniLibs']

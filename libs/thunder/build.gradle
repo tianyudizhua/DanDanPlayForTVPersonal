@@ -26,5 +26,5 @@ android {
 }
 
 dependencies {
-    implementation dependence.libAppCompat
+    implementation dependence.libAnnotation
 }

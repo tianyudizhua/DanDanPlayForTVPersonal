@@ -233,7 +233,8 @@ public class XLDownloadManager {
                         i2 = XLUtil.getNetworkTypeComplete(context);
                     }
                     try {
-                        i = this.mLoader.init(context, initParam.mAppVersion, BuildConfig.FLAVOR, peerid, guid, initParam.mStatSavePath, initParam.mStatCfgSavePath, i2, initParam.mPermissionLevel);
+                        i = this.mLoader.init(context, initParam.mAppVersion, "", peerid, guid, initParam.mStatSavePath, initParam.mStatCfgSavePath, i2, initParam.mPermissionLevel);
+//                        i = this.mLoader.init(context, initParam.mAppVersion, BuildConfig.FLAVOR, peerid, guid, initParam.mStatSavePath, initParam.mStatCfgSavePath, i2, initParam.mPermissionLevel);
                         Log.e(TAG, "loader init end: + " + i);
                         if (i != XLErrorCode.NO_ERROR) {
                             mDownloadManagerState = XLManagerStatus.MANAGER_INIT_FAIL;
